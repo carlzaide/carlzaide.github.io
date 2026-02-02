@@ -328,4 +328,40 @@ function createHeart() {
 
 setInterval(createHeart, 500);
 </script>
+<style>
+/* Heart styling */
+#popHeart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 100px;
+  color: red;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 1000;
+}
+.pop {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+</style>
 
+<!-- Heart element -->
+<div id="popHeart">❤️</div>
+
+<script>
+function showHeart() {
+  const heart = document.getElementById('popHeart');
+  heart.classList.add('pop');
+  
+  // Hide it again after 1s
+  setTimeout(() => {
+    heart.classList.remove('pop');
+  }, 1000);
+}
+
+// Example: trigger heart when user clicks anywhere
+document.addEventListener('click', showHeart);
+</script>
