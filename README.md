@@ -1,5 +1,4 @@
-# carlzaide.github.io
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -172,7 +171,7 @@
             fill="#ff7aa2"/>
     </svg>
 
-    <h1>nirali will you be my valentine?</h1>
+    <h1>hi pupay, will you be my valentine?</h1>
 
     <section class="button-zone" id="zone">
       <button id="yesBtn">Yes</button>
@@ -180,7 +179,7 @@
     </section>
 
     <!-- HINT -->
-    <div class="hint" id="hint">“No” seems a bit shy 😈</div>
+    <div class="hint" id="hint">wag no pls hahahahaha</div>
 
     <section class="result" id="result">
       <h2>YAY! 🎉</h2>
