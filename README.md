@@ -300,5 +300,32 @@
   </script>
 </body>
 </html>
+<style>
+@keyframes floatUp {
+  0% { transform: translateY(100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-10%) rotate(360deg); opacity: 0; }
+}
 
+.heart {
+  position: fixed;
+  bottom: 0;
+  font-size: 20px;
+  color: red;
+  animation: floatUp 5s linear infinite;
+}
+</style>
+
+<script>
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.textContent = '❤️';
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 5000);
+}
+
+setInterval(createHeart, 500);
+</script>
 
